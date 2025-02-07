@@ -2,7 +2,8 @@ import java.util.ArrayList;
 
 public class UnsoldProducts {
     public static void main(String[] args) {
-        int arr[] = {5, 2, 0, 8, 0};
+        int arr[] = {5, 2, 0,0, 8, 0};
+        // Align the zeros at the end (5,2,8,0,0)
         getUnSoldProducts(arr);
     }
 
@@ -13,6 +14,6 @@ public class UnsoldProducts {
             if (arr[i] != 0) newList.add(nonIntegerIndex++, arr[i]);
             else newList.add(newList.size(), arr[i]);
         }
-        System.out.print(newList);
+        System.out.println(newList);
     }
 }
