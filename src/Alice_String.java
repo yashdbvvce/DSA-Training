@@ -1,6 +1,7 @@
 public class Alice_String {
     public static void main(String[] args) {
         System.out.println(LongestString(".........."));
+        // Eg abc.a.b -> 3 (Max length without interuption is 3 i.e abc)
     }
 
     public static int LongestString(String s){
