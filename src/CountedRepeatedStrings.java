@@ -18,6 +18,7 @@ public class CountedRepeatedStrings {
                     }
                 }
                 currString = new StringBuffer("");
+
             }
         }
         System.out.println(arr);
