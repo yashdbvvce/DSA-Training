@@ -8,9 +8,7 @@ public class RearrangementOfNumbers {
         int currentPower = 0;
         while(n > 0){
             int rem = n % 2;
-            if(rem == 1){
-                minimumValue += (int)Math.pow(2,currentPower++);
-            }
+            if(rem == 1) minimumValue += (int)Math.pow(2,currentPower++);
             n = n/2;
         }
         return minimumValue;
