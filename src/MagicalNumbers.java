@@ -1,19 +1,17 @@
 /*
-     An Magic number is as follow
      Number - Binary Representation - Convert (1-2) & (0-1) - Sum of the number
 */
 
 
 public class MagicalNumbers {
     public static void main(String[] args) {
-        int n = 5;
+        int n = 10;
         int count = 0;
         for(int i  =1; i <=n; i++){
             if(getMagicalNumberForN(i) % 2  != 0){
                 count++;
             }
         }
-
         System.out.println(count);
     }
 
