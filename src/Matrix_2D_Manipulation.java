@@ -1,5 +1,3 @@
-import javax.rmi.ssl.SslRMIClientSocketFactory;
-
 public class Matrix_2D_Manipulation {
     public static void main(String[] args) {
         int n = 3;
