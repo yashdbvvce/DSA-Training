@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class TargetPair {
     public static void main(String[] args) {
-        int arr[] = {1,3,5,7};
+        int arr[] = {1,1,3,5,7,3};
         int target = 2;
         System.out.println(getTargetPairs(arr,target));
     }
@@ -12,8 +12,8 @@ public class TargetPair {
         Arrays.sort(arr);
         ArrayList<String> uniquePairs = new ArrayList<>();
         for(int i = 0; i < arr.length; i++){
-            for(int j = i+1; j < arr.length; j++){
-                if(Math.abs(j-i) == target){
+            for(int j = i; j < arr.length; j++){
+                if(Math.abs(arr[j]-arr[i]) == target){
                     String currPair = Integer.toString(arr[i]).concat(Integer.toString(arr[j]));
                     if(!uniquePairs.contains(currPair)){
                         uniquePairs.add(currPair);
