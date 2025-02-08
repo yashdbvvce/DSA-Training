@@ -50,6 +50,7 @@ public class Matrix_2D_Manipulation {
         return diagnolElement;
     }
 
+
     public static int getNonDiagnolElement(int arr[][], int i, int j, int n){
        int iCalculation = 1;
        int jCalculation = 1;
